@@ -4,4 +4,5 @@
     <string name="label_numero_uno">Digite Número Uno</string>
     <string name="label_numero_dos">Digite Número Dos</string>
     <string name="btn_calcular">Calcular</string>
+    <string name="text_borrar">Borrar</string>
 </resources>

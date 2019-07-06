@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     TextView resultado;
     EditText num1, num2;
     double n1, n2, suma;
-    Button btn;
+    Button btn1, btn2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,14 +23,23 @@ public class MainActivity extends AppCompatActivity {
         num1 = (EditText) findViewById(R.id.txtNumeroUno);
         num2 = (EditText) findViewById(R.id.txtNumeroDos);
 
-        btn = (Button)findViewById(R.id.btnCalcular);
-        btn.setOnClickListener(new View.OnClickListener() {
+        btn1 = (Button)findViewById(R.id.btnCalcular);
+        btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 n1 = Double.parseDouble(num1.getText().toString());
                 n2 = Double.parseDouble(num2.getText().toString());
                 suma = n1+n2;
                 resultado.setText(""+suma);
+            }
+        });
+
+
+        btn2 = (Button)findViewById(R.id.btnBorrar);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resultado.setText("");
             }
         });
     }

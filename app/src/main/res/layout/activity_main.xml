@@ -39,11 +39,24 @@
         android:hint="@string/label_numero_dos"
         android:inputType="number" />
 
-    <Button
-        android:id="@+id/btnCalcular"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_calcular" />
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_calcular" />
+
+        <Button
+            android:id="@+id/btnBorrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/text_borrar" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/txtResultado"
