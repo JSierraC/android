@@ -10,21 +10,27 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
-    TextView text;
-    EditText casilla;
+    TextView resultado;
+    EditText num1, num2;
+    double n1, n2, suma;
     Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        text = (TextView) findViewById(R.id.txtView);
-        casilla = (EditText) findViewById(R.id.editText);
-        btn = (Button)findViewById(R.id.button);
+        resultado = (TextView) findViewById(R.id.txtResultado);
+        num1 = (EditText) findViewById(R.id.txtNumeroUno);
+        num2 = (EditText) findViewById(R.id.txtNumeroDos);
+
+        btn = (Button)findViewById(R.id.btnCalcular);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                text.setText(casilla.getText());
+                n1 = Double.parseDouble(num1.getText().toString());
+                n2 = Double.parseDouble(num2.getText().toString());
+                suma = n1+n2;
+                resultado.setText(""+suma);
             }
         });
     }
