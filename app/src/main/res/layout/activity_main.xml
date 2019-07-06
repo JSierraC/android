@@ -11,7 +11,12 @@
         android:id="@+id/txtView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
         android:text="@string/saludo"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -19,40 +24,35 @@
         tools:text="@string/saludo" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/txtNumeroUno"
         android:layout_width="match_parent"
-        android:layout_height="19dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="numberDecimal" />
+        android:hint="@string/label_numero_uno"
+        android:inputType="textPersonName"
+        android:text="@string/label_numero_uno" />
 
     <EditText
-        android:id="@+id/editText3"
-        android:layout_width="386dp"
-        android:layout_height="17dp"
-        android:layout_weight="1"
+        android:id="@+id/txtNumeroDos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="numberDecimal" />
+        android:hint="@string/label_numero_dos"
+        android:inputType="textPersonName"
+        android:text="@string/label_numero_dos" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="351dp"
-        android:layout_height="114dp"
-        android:text="Click"
-        android:textAlignment="center"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="424dp" />
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_calcular" />
 
     <TextView
-        android:id="@+id/txtView2"
-        android:layout_width="wrap_content"
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="@string/saludo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/saludo" />
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
 </LinearLayout>
