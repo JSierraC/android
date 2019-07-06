@@ -2,5 +2,18 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="saludo">CALCULATOR</string>
-
+    <string name="label_numero_uno">ENTER NUMBER ONE</string>
+    <string name="label_numero_dos">ENTER NUMBER TWO</string>
+    <string name="btn_calcular">CALC</string>
+    <string name="text_borrar">CLEAR</string>
+    <string name="suma">ADD</string>
+    <string name="resta">SUBSTRACT</string>
+    <string name="multiplicacion">MULT</string>
+    <string name="division">DIVIZION</string>
+    <string-array name="operaciones">
+        <item>@string/suma</item>
+        <item>@string/resta</item>
+        <item>@string/multiplicacion</item>
+        <item>@string/division</item>
+    </string-array>
 </resources>
