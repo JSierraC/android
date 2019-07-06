@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="saludo">CALCULADORA</string>
+    <string name="saludo">CALCULADORA CADIO</string>
     <string name="label_numero_uno">Digite Número Uno</string>
     <string name="label_numero_dos">Digite Número Dos</string>
     <string name="btn_calcular">Calcular</string>
@@ -15,4 +15,7 @@
         <item>@string/multiplicacion</item>
         <item>@string/division</item>
     </string-array>
+    <string name="msj1">El Numero 1 No Puedeo Ser 0</string>
+    <string name="msj2">El Numero 2 No Puedeo Ser 0</string>
+    <string name="msj3">Error</string>
 </resources>

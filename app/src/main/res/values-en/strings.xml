@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">My Application</string>
-    <string name="saludo">CALCULATOR</string>
+    <string name="saludo">CALCULATOR CADIO</string>
     <string name="label_numero_uno">ENTER NUMBER ONE</string>
     <string name="label_numero_dos">ENTER NUMBER TWO</string>
     <string name="btn_calcular">CALC</string>
@@ -16,4 +16,7 @@
         <item>@string/multiplicacion</item>
         <item>@string/division</item>
     </string-array>
+    <string name="msj1">Number 1 can not Zero</string>
+    <string name="msj2">Number 2 can not Zero</string>
+    <string name="msj3">Number 2 can not Zero</string>
 </resources>
